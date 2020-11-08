@@ -1,0 +1,4 @@
+记sum[i]为字符串s的第i个位置，则要求：
+sum[i] - sum[j] = level[s[i] - 'a'];
+s[i] = s[j];
+可用map统计sum[i]的个数，之后求和。
