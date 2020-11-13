@@ -1,0 +1,3 @@
+暴力枚举q的素因子，令r|q，cntr为r的个数，有：
+  当cntqr <= cntpr，ans = max(ans,p / (cntpr - cntqr + 1));
+  否则ans = p;
