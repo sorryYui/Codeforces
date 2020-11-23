@@ -1,0 +1,9 @@
+设S(C,D)为4 * LCS(C,D) - |C| - |D|;
+LCS(C,D)为字符串C,D的最长公共子序列。
+假设lenc = len(pre_C),lend = len(pre_D),其中pre_C,pre_D为字符串C,D的前缀。
+有当lenc + 1,lend + 1时，有
+当c[lenc] == d[lend]时，
+  有S(C,D) = S(pre_C,pre_D) + 2;
+否则
+  S(C,D) = S(pre_C,pre_D) - 1;
+答案取所有S(C,D)的max值。
