@@ -5,5 +5,5 @@ LCS(C,D)为字符串C,D的最长公共子序列。
 当c[lenc] == d[lend]时，
   有S(C,D) = S(pre_C,pre_D) + 2;
 否则
-  S(C,D) = S(pre_C,pre_D) - 1;
+  S(C,D) = max(S(C,pre_D),S(pre_C,D)) - 1;
 答案取所有S(C,D)的max值。
