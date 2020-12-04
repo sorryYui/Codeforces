@@ -1,0 +1,4 @@
+1.dis(u,v) > a[u]时，点v为bad。
+需要将子树u删除，点v才不为bad。
+故为树上的最大连续和；
+即:f[cur] = max(f[pre] + e[pre][cur],e[pre][cur]) > a[cur]时，删除u点。
