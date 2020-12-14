@@ -1,0 +1,5 @@
+题目要求一个n * m的表中有多少个塔(即假设有k层，则第i层有i个)。
+有设pre[i][j]为以(i,j)为中心是左边的最长延长数，suf(i,j)为以(i,j)为中心的最长延长数，up(i,j)为以(i,j)为中心的高。
+有pre[i][j] = min(pre[i][j - 1] + 1,up[i][j]),suf[i][j] = min(suf[i][j + 1] + 1,up[i][j])
+ans = min(pre[i][j],suf[i][j]);
+时间度:O(n * m),空间度:O(n * m)
